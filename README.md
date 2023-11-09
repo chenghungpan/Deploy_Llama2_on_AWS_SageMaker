@@ -13,13 +13,6 @@ learning workloads on Amazon EC2, Amazon ECS and Amazon EKS services as well.
 For the list of available DLC images, see [Available Deep Learning Containers Images](available_images.md). 
 You can find more information on the images available in Sagemaker [here](https://docs.aws.amazon.com/sagemaker/latest/dg/pre-built-containers-frameworks-deep-learning.html)
 
-## Table of Contents
-
- [Getting Started](#getting-started)
-
- [Building your Image](#building-your-image)
-
- [Running Tests Locally](#running-tests-locally)
 
 ### Getting started
 
