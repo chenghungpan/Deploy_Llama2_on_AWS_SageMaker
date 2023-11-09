@@ -1,0 +1,14 @@
+boto3
+sagemaker
+pytest
+pytest-rerunfailures
+pytest-timeout
+pytest-xdist
+requests
+fabric
+invoke
+retrying
+tenacity
+gitpython
+toml
+packaging
