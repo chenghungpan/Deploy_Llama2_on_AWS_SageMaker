@@ -13,12 +13,6 @@ learning workloads on Amazon EC2, Amazon ECS and Amazon EKS services as well.
 For the list of available DLC images, see [Available Deep Learning Containers Images](available_images.md). 
 You can find more information on the images available in Sagemaker [here](https://docs.aws.amazon.com/sagemaker/latest/dg/pre-built-containers-frameworks-deep-learning.html)
 
-## License
-
-This project is licensed under the Apache-2.0 License.
-
-`smdistributed.dataparallel` and `smdistributed.modelparallel` are released under the [AWS Customer Agreement](https://aws.amazon.com/agreement/).
-
 ## Table of Contents
 
  [Getting Started](#getting-started)
