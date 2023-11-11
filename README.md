@@ -1,4 +1,9 @@
-## AWS Deep Learning Containers
+
+## Deploy Llama2 on AWS SageMaker
+
+This repository serves as a resource for anyone looking to leverage the power of state-of-the-art language processing within the robust and scalable AWS cloud environment. Here, you'll find detailed instructions, scripts, and best practices for efficiently deploying Llama2, ensuring that you can harness its capabilities for a wide range of applications, from natural language understanding and generation to more specialized AI-driven tasks.
+
+### AWS Deep Learning Containers
 
 AWS [Deep Learning Containers (DLCs)](https://docs.aws.amazon.com/deep-learning-containers/latest/devguide/what-is-dlc.html) 
 are a set of Docker images for training and serving models in TensorFlow, TensorFlow 2, PyTorch, and MXNet. 
@@ -16,12 +21,12 @@ You can find more information on the images available in Sagemaker [here](https:
 
 ### Getting started
 
-We describe here the setup to build and test the DLCs on the platforms Amazon SageMaker, EC2, ECS and EKS.
+Here is the setup to build and test the DLCs on the platforms Amazon SageMaker, EC2, ECS and EKS.
 
-We take an example of building a ***MXNet GPU python3 training*** container.
+I take an example of building a ***MXNet GPU python3 training*** container.
 
 * Ensure you have access to an AWS account i.e. [setup](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) 
-your environment such that awscli can access your account via either an IAM user or an IAM role. We recommend an IAM role for use with AWS. 
+your environment such that awscli can access your account via either an IAM user or an IAM role. I recommend an IAM role for use with AWS. 
 For the purposes of testing in your personal account, the following managed permissions should suffice: <br>
 -- [AmazonEC2ContainerRegistryFullAccess](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess) <br>
 -- [AmazonEC2FullAccess](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEC2FullAccess) <br>
@@ -220,7 +225,7 @@ Example:
     ```shell script
     pytest -s ecs/mxnet/training/test_ecs_mxnet_training.py
     ```
-6. To run a specific test function (in this example we use the cpu dgl ecs test), modify the command to look like so:
+6. To run a specific test function (in this example I use the cpu dgl ecs test), modify the command to look like so:
     ```shell script
     pytest -s ecs/mxnet/training/test_ecs_mxnet_training.py::test_ecs_mxnet_training_dgl_cpu
     ```
